@@ -1,0 +1,131 @@
+:root {
+    --primary: #f87060;
+    --secondary: #102542;
+    --light: #fff1ef;
+    --white: #ffffff;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: var(--light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+  }
+  
+  #chatContainer {
+    width: 90%;
+    max-width: 800px;
+    height: 80vh;
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  #header {
+    background: var(--secondary);
+    color: var(--white);
+    padding: 15px;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  
+  .status {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+  }
+  
+  .status-dot {
+    width: 8px;
+    height: 8px;
+    background: var(--primary);
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+  
+  #messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .message {
+    max-width: 70%;
+    padding: 10px;
+    border-radius: 8px;
+    word-wrap: break-word;
+  }
+  
+  .userMessage {
+    background: var(--primary);
+    color: var(--white);
+    align-self: flex-end;
+  }
+  
+  .botMessage {
+    background: var(--secondary);
+    color: var(--white);
+    align-self: flex-start;
+  }
+  
+  #inputArea {
+    display: flex;
+    padding: 15px;
+    background: var(--white);
+    border-top: 1px solid var(--light);
+  }
+  
+  #userInput {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid var(--secondary);
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  
+  #sendBtn {
+    background: var(--primary);
+    color: var(--white);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 10px;
+  }
+  
+  #sendBtn:hover {
+    background: #e55a4a;
+  }
+  
+  .status-dot.online {
+    background-color: green;
+  }
+  
+  .status-dot.offline {
+    background-color: red;
+  }
+  a {
+    color: white !important;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
