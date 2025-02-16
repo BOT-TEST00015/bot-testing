@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:10000/chat';
+const API_URL = 'https://bot-testing-h66s.onrender.com/chat';
 const messagesDiv = document.getElementById('messages');
 const userInput = document.getElementById('userInput');
 const sendBtn = document.getElementById('sendBtn');
@@ -49,7 +49,7 @@ userInput.addEventListener('keypress', (e) => {
 addMessage('👋 Hello! Type "help" to see available commands.');
 
 function checkServerStatus() {
-    fetch('http://localhost:8080/chat', { method: 'HEAD' })  // Sending a HEAD request
+    fetch('https://bot-testing-h66s.onrender.com/chat', { method: 'HEAD' })  // Sending a HEAD request
       .then(response => {
         document.querySelector('.status').innerHTML = '<span class="status-dot online"></span> Online';
       })
