@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:8080/chat';
+const API_URL = 'http://localhost:10000/chat';
 const messagesDiv = document.getElementById('messages');
 const userInput = document.getElementById('userInput');
 const sendBtn = document.getElementById('sendBtn');
